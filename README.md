@@ -31,9 +31,9 @@ Each LAN includes:
 
 ### ✅ Flexible IP Input Parsing
 Supports:
-- IP/CIDR` → e.g. `192.168.1.0/24`
-- IP,Netmask` → e.g. `192.168.1.0,255.255.255.0`
-- IP Only` → e.g. `10.0.0.1` (defaults to `/24`)
+- `IP/CIDR` → e.g. `192.168.1.0/24`  
+- `IP,Netmask` → e.g. `192.168.1.0,255.255.255.0`  
+- `IP Only` → e.g. `10.0.0.1` (defaults to `/24`)
 
 ### ✅ Flutter UI Features
 - Clean material design
@@ -52,48 +52,50 @@ Supports:
 - Any Android/iOS emulator or physical device
 
 ### 🔧 Running the App
-1. Clone the repo:
 
-   git clone https://github.com/yourusername/ip-networking-tool.git
+1. **Clone the repo:**
+
+ 
+   git clone https://github.com/semedo-nob/ip-networking-tool.git
    cd ip-networking-tool
    
 Get dependencies:
 
 
-flutter pub get
+`flutter pub get`
 
-Run it:
+Run the app:
 
-flutter run
+
+`flutter run`
 
 🧠 Example Use Case
 
-
 === IP Networking Tool ===
 
-Enter IP: 192.168.1.0/26
+Enter IP: 192.168.1.0/26  
 Parsed Network: 192.168.1.0/26 (Mask: 255.255.255.192)
 
-Perform bitwise operation? (AND/OR/N): AND
-  Binary Result: 11000000101010000000000100000000
+Perform bitwise operation? (AND/OR/N): AND  
+  Binary Result: 11000000101010000000000100000000  
   Resulting IP: 192.168.1.0
 
-LAN Mode? (M for Manual, A for Auto): M
+LAN Mode? (M for Manual, A for Auto): M  
 Enter number of LANs to create: 2
 
-LAN 1
-  Network Address : 192.168.1.0
-  Broadcast Addr  : 192.168.1.31
-  Usable IPs      : 192.168.1.1 - 192.168.1.30
-  CIDR Notation   : /27
-  Subnet Mask     : 255.255.255.224
+LAN 1  
+  Network Address : 192.168.1.0  
+  Broadcast Addr  : 192.168.1.31  
+  Usable IPs      : 192.168.1.1 - 192.168.1.30  
+  CIDR Notation   : /27  
+  Subnet Mask     : 255.255.255.224  
 
-LAN 2
-  Network Address : 192.168.1.32
-  Broadcast Addr  : 192.168.1.63
-  Usable IPs      : 192.168.1.33 - 192.168.1.62
-  CIDR Notation   : /27
-  Subnet Mask     : 255.255.255.224
+LAN 2  
+  Network Address : 192.168.1.32  
+  Broadcast Addr  : 192.168.1.63  
+  Usable IPs      : 192.168.1.33 - 192.168.1.62  
+  CIDR Notation   : /27  
+  Subnet Mask     : 255.255.255.224  
 📤 Export Options
 Save results as .csv or .pdf for documentation or further analysis.
 
@@ -130,4 +132,3 @@ Flutter
 Dart
 
 Networking logic based on RFC 3021, RFC 4632
-
